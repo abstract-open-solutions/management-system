@@ -18,32 +18,23 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    "name": "Management System - Audit",
-    "version": "1.2",
-    "author": "Savoir-faire Linux",
-    "website": "http://www.savoirfairelinux.com",
-    "license": "AGPL-3",
-    "category": "Management System",
-    "description": """\
-This module enables you to manage audits and verifications lists of your
-management system.
-    """,
-    "depends": ['mgmtsystem_nonconformity'],
-    "data": [
-        'security/ir.model.access.csv',
-        'security/mgmtsystem_audit_security.xml',
-        'audit_sequence.xml',
-        'mgmtsystem_audit.xml',
-        'report/audit_report.xml',
-        'report/verification_list.xml',
-        'board_mgmtsystem_audit.xml',
-        'wizard/copy_verification_lines.xml',
-    ],
-    "demo": [
-        'demo_audit.xml',
-    ],
-    'installable': False,
-    "certificate": ''
-}
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+
+import time
+from openerp.report import report_sxw
+
+
+class mgmtsystem_audit_report(report_sxw.rml_parse):
+
+    def __init__(self, cr, uid, name, context):
+        super(mgmtsystem_audit_report, self).__init__(cr, uid, name, context)
+        self.localcontext.update({
+            'time': time,
+        })
+
+report_sxw.report_sxw(
+    'report.mgmtsystem.audit.report',
+    'mgmtsystem.audit',
+    'addons/mgmtsystem_audit/report/audit_report.rml',
+    parser=mgmtsystem_audit_report
+)
+
