@@ -1,6 +1,29 @@
 2015-02-25
 ----------
 
+* Moved icon.png to static/description/ folder
+  (see.: https://github.com/OCA/management-system/issues/49) in these packages:
+
+    * mgmtsystem_audit
+    * mgmtsystem_review
+
+
+* Merged 8.0-mgmtsystem_quality branch
+  from https://github.com/savoirfairelinux/management-system/
+
+* Merged 8.0-mgmtsystem_review branch
+  from https://github.com/savoirfairelinux/management-system/
+
+* Merged 8.0-mgmtsystem-survey branch
+    from https://github.com/savoirfairelinux/management-system/
+
+
+* Merged 8.0-mgmtsystem_audit branch
+  from https://github.com/savoirfairelinux/management-system/
+
+* Merged 8.0-mgmtsystem_nonconformity branch
+  from https://github.com/savoirfairelinux/management-system/
+
 * Renamed information_security_manual.xml to document_page_data.xml
   see.: https://github.com/OCA/management-system/pull/18
 
