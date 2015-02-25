@@ -40,10 +40,10 @@ This module enables you to manage your quality management system, including :
         'document_page_quality_manual',
         'mgmtsystem_review',
     ],
-    "data": ['quality.xml'],
+    "data": [
+        'data/mgmtsystem_system.xml',
+    ],
     "demo": [],
-    'installable': False,
+    'installable': True,
     "application": True,
-    "certificate": ''
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
