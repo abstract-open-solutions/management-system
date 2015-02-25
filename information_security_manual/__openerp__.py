@@ -31,7 +31,6 @@
     "init": [],
     "data": ['information_security_manual.xml'],
     "demo": [],
-    'installable': False,
+    'installable': True,
     "certificate": ''
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
