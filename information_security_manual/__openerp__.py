@@ -29,7 +29,7 @@
     """,
     "depends": ['mgmtsystem_manuals'],
     "init": [],
-    "data": ['information_security_manual.xml'],
+    "data": ['data/document_page_data.xml'],
     "demo": [],
     'installable': True,
     "certificate": ''
