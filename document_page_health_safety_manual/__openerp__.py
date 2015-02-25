@@ -28,7 +28,7 @@
     "description": """Health and Safety Manual Template
     """,
     "depends": ['mgmtsystem_manuals'],
-    "data": ['document_page_health_safety_manual.xml'],
+    "data": ['data/document_page_data.xml'],
     "demo": [],
     'installable': True,
     "certificate": ''
