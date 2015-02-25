@@ -34,7 +34,5 @@ This module adds a menu item "Manual" and is a dependency of:
     "depends": ['document_page_approval', 'mgmtsystem'],
     "data": ['mgmtsystem_manuals.xml'],
     "demo": [],
-    'installable': False,
-    "certificate": ''
+    'installable': True,
 }
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
