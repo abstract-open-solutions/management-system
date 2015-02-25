@@ -21,124 +21,15 @@
 
 from openerp.tools.translate import _
 from openerp import netsvc
-from openerp.osv import fields, orm
-from openerp.addons.base_status.base_state import base_state
+from openerp.osv import orm
+from openerp import models, api, fields
+
 from openerp.tools import (
     DEFAULT_SERVER_DATETIME_FORMAT as DATETIME_FORMAT,
     DEFAULT_SERVER_DATE_FORMAT as DATE_FORMAT,
 )
 
 import time
-
-
-class mgmtsystem_nonconformity_cause(orm.Model):
-    """
-    Cause of the nonconformity of the management system
-    """
-    _name = "mgmtsystem.nonconformity.cause"
-    _description = "Cause of the nonconformity of the management system"
-    _order = 'parent_id, sequence'
-
-    def name_get(self, cr, uid, ids, context=None):
-        ids = ids or []
-        reads = self.read(cr, uid, ids, ['name', 'parent_id'], context=context)
-        res = []
-        for record in reads:
-            name = record['name']
-            if record['parent_id']:
-                name = record['parent_id'][1] + ' / ' + name
-            res.append((record['id'], name))
-        return res
-
-    def _name_get_fnc(self, cr, uid, ids, prop, unknow_none, context=None):
-        res = self.name_get(cr, uid, ids, context=context)
-        return dict(res)
-
-    _columns = {
-        'id': fields.integer('ID', readonly=True),
-        'name': fields.char('Cause', size=50, required=True, translate=True),
-        'description': fields.text('Description'),
-        'sequence': fields.integer(
-            'Sequence',
-            help="Defines the order to present items",
-        ),
-        'parent_id': fields.many2one(
-            'mgmtsystem.nonconformity.cause',
-            'Group',
-        ),
-        'child_ids': fields.one2many(
-            'mgmtsystem.nonconformity.cause',
-            'parent_id',
-            'Child Causes',
-        ),
-        'ref_code': fields.char('Reference Code', size=20),
-    }
-
-    def _rec_message(self, cr, uid, ids, context=None):
-        return _('Error! Cannot create recursive cycle.')
-
-    _constraints = [
-        (orm.BaseModel._check_recursion, _rec_message, ['parent_id'])
-    ]
-
-
-class mgmtsystem_nonconformity_origin(orm.Model):
-    """
-    Origin of nonconformity of the management system
-    """
-    _name = "mgmtsystem.nonconformity.origin"
-    _description = "Origin of nonconformity of the management system"
-    _order = 'parent_id, sequence'
-
-    def name_get(self, cr, uid, ids, context=None):
-        ids = ids or []
-        reads = self.read(cr, uid, ids, ['name', 'parent_id'], context=context)
-        res = []
-        for record in reads:
-            name = record['name']
-            if record['parent_id']:
-                name = record['parent_id'][1] + ' / ' + name
-            res.append((record['id'], name))
-        return res
-
-    def _name_get_fnc(self, cr, uid, ids, prop, unknow_none, context=None):
-        res = self.name_get(cr, uid, ids, context=context)
-        return dict(res)
-
-    _columns = {
-        'id': fields.integer('ID', readonly=True),
-        'name': fields.char('Origin', size=50, required=True, translate=True),
-        'description': fields.text('Description'),
-        'sequence': fields.integer(
-            'Sequence',
-            help="Defines the order to present items",
-        ),
-        'parent_id': fields.many2one(
-            'mgmtsystem.nonconformity.origin',
-            'Group',
-        ),
-        'child_ids': fields.one2many(
-            'mgmtsystem.nonconformity.origin',
-            'parent_id',
-            'Childs',
-        ),
-        'ref_code': fields.char('Reference Code', size=20),
-    }
-
-
-class mgmtsystem_nonconformity_severity(orm.Model):
-    """Nonconformity Severity - Critical, Major, Minor, Invalid, ..."""
-    _name = "mgmtsystem.nonconformity.severity"
-    _description = "Severity of Complaints and Nonconformities"
-    _columns = {
-        'name': fields.char('Title', size=50, required=True, translate=True),
-        'sequence': fields.integer('Sequence',),
-        'description': fields.text('Description', translate=True),
-        'active': fields.boolean('Active?'),
-    }
-    _defaults = {
-        'active': True,
-    }
 
 
 _STATES = [
@@ -151,8 +42,12 @@ _STATES = [
 ]
 _STATES_DICT = dict(_STATES)
 
+own_company = lambda self: self.env.user.company_id.id
+default_date = lambda *a: time.strftime(DATE_FORMAT)
+default_user_id = lambda self: self.env.user.id
 
-class mgmtsystem_nonconformity(base_state, orm.Model):
+
+class mgmtsystem_nonconformity(models.Model):
     """
     Management System - Nonconformity
     """
@@ -162,127 +57,129 @@ class mgmtsystem_nonconformity(base_state, orm.Model):
     _inherit = ['mail.thread']
     _order = "date desc"
 
-    def _state_name(self, cr, uid, ids, name, args, context=None):
+    def _state_name(self):
         res = dict()
-        for o in self.browse(cr, uid, ids, context=context):
+        for o in self:
             res[o.id] = _STATES_DICT.get(o.state, o.state)
         return res
 
-    _columns = {
-        # 1. Description
-        'id': fields.integer('ID', readonly=True),
-        'ref': fields.char('Reference', size=64, required=True, readonly=True),
-        'date': fields.date('Date', required=True),
-        'partner_id': fields.many2one('res.partner', 'Partner', required=True),
-        'reference': fields.char('Related to', size=50),
-        'responsible_user_id': fields.many2one(
-            'res.users',
-            'Responsible',
-            required=True,
-        ),
-        'manager_user_id': fields.many2one(
-            'res.users',
-            'Manager',
-            required=True,
-        ),
-        'author_user_id': fields.many2one(
-            'res.users',
-            'Filled in by',
-            required=True,
-        ),
-        'origin_ids': fields.many2many(
-            'mgmtsystem.nonconformity.origin',
-            'mgmtsystem_nonconformity_origin_rel',
-            'nonconformity_id',
-            'origin_id', 'Origin', required=True,
-        ),
-        'procedure_ids': fields.many2many(
-            'document.page', 'mgmtsystem_nonconformity_procedure_rel',
-            'nonconformity_id', 'procedure_id', 'Procedure'
-        ),
-        'description': fields.text('Description', required=True),
-        'state': fields.selection(_STATES, 'State', readonly=True),
-        'state_name': fields.function(
-            _state_name,
-            string='State Description',
-            type='char',
-            size=40,
-        ),
-        'system_id': fields.many2one('mgmtsystem.system', 'System'),
-        # 2. Root Cause Analysis
-        'cause_ids': fields.many2many(
-            'mgmtsystem.nonconformity.cause',
-            'mgmtsystem_nonconformity_cause_rel',
-            'nonconformity_id',
-            'cause_id',
-            'Cause',
-        ),
-        'severity_id': fields.many2one(
-            'mgmtsystem.nonconformity.severity',
-            'Severity',
-        ),
-        'analysis': fields.text('Analysis'),
-        'immediate_action_id': fields.many2one(
-            'mgmtsystem.action',
-            'Immediate action',
-            domain="[('nonconformity_id', '=', id)]",
-        ),
-        'analysis_date': fields.datetime('Analysis Date', readonly=True),
-        'analysis_user_id': fields.many2one(
-            'res.users',
-            'Analysis by',
-            readonly=True,
-        ),
-        # 3. Action Plan
-        'action_ids': fields.many2many(
-            'mgmtsystem.action',
-            'mgmtsystem_nonconformity_action_rel',
-            'nonconformity_id',
-            'action_id',
-            'Actions',
-        ),
-        'actions_date': fields.datetime('Action Plan Date', readonly=True),
-        'actions_user_id': fields.many2one(
-            'res.users',
-            'Action Plan by',
-            readonly=True,
-        ),
-        'action_comments': fields.text(
-            'Action Plan Comments',
-            help="Comments on the action plan.",
-        ),
-        # 4. Effectiveness Evaluation
-        'evaluation_date': fields.datetime('Evaluation Date', readonly=True),
-        'evaluation_user_id': fields.many2one(
-            'res.users',
-            'Evaluation by',
-            readonly=True,
-        ),
-        'evaluation_comments': fields.text(
-            'Evaluation Comments',
-            help="Conclusions from the last effectiveness evaluation.",
-        ),
-        # Multi-company
-        'company_id': fields.many2one('res.company', 'Company'),
-    }
+    # 1. Description
+    id = fields.Integer('ID', readonly=True)
+    ref = fields.Char(
+        'Reference',
+        size=64,
+        required=True,
+        readonly=True,
+        default="NEW"
+    )
+    date = fields.Date('Date', required=True, default=default_date)
+    partner_id = fields.Many2one('res.partner', 'Partner', required=True)
+    reference = fields.Char('Related to', size=50)
+    responsible_user_id = fields.Many2one(
+        'res.users',
+        'Responsible',
+        required=True,
+    )
+    manager_user_id = fields.Many2one(
+        'res.users',
+        'Manager',
+        required=True,
+    )
+    author_user_id = fields.Many2one(
+        'res.users',
+        'Filled in by',
+        required=True,
+        default=default_user_id,
+    )
+    origin_ids = fields.Many2many(
+        'mgmtsystem.nonconformity.origin',
+        'mgmtsystem_nonconformity_origin_rel',
+        'nonconformity_id',
+        'origin_id',
+        'Origin',
+        required=True,
+    )
+    procedure_ids = fields.Many2many(
+        'document.page',
+        'mgmtsystem_nonconformity_procedure_rel',
+        'nonconformity_id',
+        'procedure_id',
+        'Procedure',
+    )
+    description = fields.Text('Description', required=True)
+    state = fields.Selection(_STATES, 'State', readonly=True, default="draft")
+    state_name = fields.Char(
+        compute='_state_name',
+        string='State Description',
+        size=40,
+    )
+    system_id = fields.Many2one('mgmtsystem.system', 'System')
 
-    _defaults = {
-        'company_id': (
-            lambda self, cr, uid, c:
-            self.pool.get('res.users').browse(cr, uid, uid, c).company_id.id),
-        'date': lambda *a: time.strftime(DATE_FORMAT),
-        'state': 'draft',
-        'author_user_id': lambda cr, uid, id, c={}: id,
-        'ref': 'NEW',
-    }
+    # 2. Root Cause Analysis
+    cause_ids = fields.Many2many(
+        'mgmtsystem.nonconformity.cause',
+        'mgmtsystem_nonconformity_cause_rel',
+        'nonconformity_id',
+        'cause_id',
+        'Cause',
+    )
+    severity_id = fields.Many2one(
+        'mgmtsystem.nonconformity.severity',
+        'Severity',
+    )
+    analysis = fields.Text('Analysis')
+    immediate_action_id = fields.Many2one(
+        'mgmtsystem.action',
+        'Immediate action',
+        domain="[('nonconformity_id', '=', id)]",
+    )
+    analysis_date = fields.Datetime('Analysis Date', readonly=True)
+    analysis_user_id = fields.Many2one(
+        'res.users',
+        'Analysis by',
+        readonly=True,
+    )
 
-    def create(self, cr, uid, vals, context=None):
+    # 3. Action Plan
+    action_ids = fields.Many2many(
+        'mgmtsystem.action',
+        'mgmtsystem_nonconformity_action_rel',
+        'nonconformity_id',
+        'action_id',
+        'Actions',
+    )
+    actions_date = fields.Datetime('Action Plan Date', readonly=True)
+    actions_user_id = fields.Many2one(
+        'res.users',
+        'Action Plan by',
+        readonly=True,
+    )
+    action_comments = fields.Text(
+        'Action Plan Comments',
+        help="Comments on the action plan.",
+    )
+
+    # 4. Effectiveness Evaluation
+    evaluation_date = fields.Datetime('Evaluation Date', readonly=True)
+    evaluation_user_id = fields.Many2one(
+        'res.users',
+        'Evaluation by',
+        readonly=True,
+    )
+    evaluation_comments = fields.Text(
+        'Evaluation Comments',
+        help="Conclusions from the last effectiveness evaluation.",
+    )
+
+    # Multi-company
+    company_id = fields.Many2one('res.company', 'Company', default=own_company)
+
+    @api.model
+    def create(self, vals):
         vals.update({
-            'ref': self.pool.get('ir.sequence').get(
-                cr, uid, 'mgmtsystem.nonconformity')
+            'ref': self.env['ir.sequence'].get('mgmtsystem.nonconformity')
         })
-        return super(mgmtsystem_nonconformity, self).create(
-            cr, uid, vals, context)
+        return super(mgmtsystem_nonconformity, self).create(vals)
 
     def message_auto_subscribe(
             self, cr, uid, ids, updated_fields, context=None, values=None):
@@ -307,9 +204,9 @@ class mgmtsystem_nonconformity(base_state, orm.Model):
             msg = '%s <b>%s</b>' % (pre, text)
             if data:
                 o = self.browse(cr, uid, ids, context=context)[0]
-                post = _('''
+                post = _(u'''
 <br />
-<ul><li> <b>Stage:</b> %s \xe2\x86\x92 %s</li></ul>\
+<ul><li> <b>Stage:</b> %s → %s</li></ul>\
 ''') % (o.state, data['state'])
                 msg += post
             self.message_post(cr, uid, [id], body=msg, context=context)
@@ -411,10 +308,12 @@ class mgmtsystem_nonconformity(base_state, orm.Model):
             )
         self.case_open_send_note(cr, uid, ids, context=context)
         # Open related Actions
-        if o.immediate_action_id and o.immediate_action_id.state == 'draft':
+        # TODO static variables... hmm update state isn't going to work
+        if (o.immediate_action_id
+                and o.immediate_action_id.stage_id.name.lower() == 'draft'):
             o.immediate_action_id.case_open()
         for a in o.action_ids:
-            if a.state == 'draft':
+            if a.stage_id.name.lower() == 'draft':
                 a.case_open()
         return self.write(cr, uid, ids, {
             'state': 'open',
@@ -447,14 +346,17 @@ class mgmtsystem_nonconformity(base_state, orm.Model):
     def wkf_close(self, cr, uid, ids, context=None):
         """Change state from in progress to closed"""
         o = self.browse(cr, uid, ids, context=context)[0]
-        done_states = ['done', 'cancelled']
+        # TODO make it more friendly
+        done_states = ['done', 'cancelled', 'settled', 'rejected']
         if (o.immediate_action_id
-                and o.immediate_action_id.state not in done_states):
+                and o.immediate_action_id.stage_id.name.lower()
+                not in done_states):
             raise orm.except_orm(
                 _('Error !'),
                 _('Immediate action from analysis has not been closed.')
             )
-        if ([i for i in o.action_ids if i.state not in done_states]):
+        if ([i for i in o.action_ids
+                if i.stage_id.name.lower() not in done_states]):
             raise orm.except_orm(
                 _('Error !'),
                 _('Not all actions have been closed.')
@@ -481,21 +383,34 @@ class mgmtsystem_nonconformity(base_state, orm.Model):
         }
         return self.write(cr, uid, ids, vals, context=context)
 
+    def case_cancel_send_note(self, cr, uid, ids, context=None):
+        for id in ids:
+            msg = _('%s has been <b>canceled</b>.') % (
+                self.case_get_note_msg_prefix(cr, uid, id, context=context)
+            )
+            self.message_post(cr, uid, [id], body=msg, context=context)
+        return True
 
-class mgmtsystem_action(orm.Model):
-    _inherit = "mgmtsystem.action"
-    _columns = {
-        'nonconformity_immediate_id': fields.one2many(
-            'mgmtsystem.nonconformity',
-            'immediate_action_id',
-            readonly=True,
-        ),
-        'nonconformity_ids': fields.many2many(
-            'mgmtsystem.nonconformity',
-            'mgmtsystem_nonconformity_action_rel',
-            'action_id',
-            'nonconformity_id',
-            'Nonconformities',
-            readonly=True,
-        ),
-    }
+    def case_reset_send_note(self, cr, uid, ids, context=None):
+        for id in ids:
+            msg = _('%s has been <b>renewed</b>.') % (
+                self.case_get_note_msg_prefix(cr, uid, id, context=context)
+            )
+            self.message_post(cr, uid, [id], body=msg, context=context)
+        return True
+
+    def case_open_send_note(self, cr, uid, ids, context=None):
+        for id in ids:
+            msg = _('%s has been <b>opened</b>.') % (
+                self.case_get_note_msg_prefix(cr, uid, id, context=context)
+            )
+            self.message_post(cr, uid, [id], body=msg, context=context)
+        return True
+
+    def case_close_send_note(self, cr, uid, ids, context=None):
+        for id in ids:
+            msg = _('%s has been <b>closed</b>.') % (
+                self.case_get_note_msg_prefix(cr, uid, id, context=context)
+            )
+            self.message_post(cr, uid, [id], body=msg, context=context)
+        return True
