@@ -26,12 +26,12 @@ msgstr "Management System"
 #. module: mgmtsystem
 #: view:board.board:0
 msgid "My Board"
-msgstr "My Board"
+msgstr "Il mio Board"
 
 #. module: mgmtsystem
 #: model:ir.ui.menu,name:mgmtsystem.menu_mgmtsystem_configuration
 msgid "Configuration"
-msgstr "Configuration"
+msgstr "Configurazione"
 
 #. module: mgmtsystem
 #: model:ir.module.module,description:mgmtsystem.module_meta_information
@@ -45,17 +45,17 @@ msgid "\n"
 "         * improvement opportunities.	\n"
 "    "
 msgstr "\n"
-"	This module is the basis of any management system applications:\n"
-"         * audit reports,\n"
-"         * nonconformities,\n"
-"         * immediate actions,\n"
-"         * preventive actions,\n"
-"         * corrective actions,\n"
-"         * improvement opportunities.	\n"
+"	Questo modulo è la base di tutti i Sistemi Gestione Qualità:\n"
+"         * report degli audit,\n"
+"         * non conformità,\n"
+"         * azioni immediate,\n"
+"         * azioni preventive,\n"
+"         * azioni correttive,\n"
+"         * opportunità di miglioramento.	\n"
 "    "
 
 #. module: mgmtsystem
 #: model:ir.actions.act_window,name:mgmtsystem.open_board_mgmtsystem
 msgid "Management System Dashboard"
-msgstr "Management System Dashboard"
+msgstr "Dashboard Sistema Gestione Qualità"
 
