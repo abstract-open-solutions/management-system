@@ -18,7 +18,7 @@ msgstr ""
 #. module: mgmtsystem_quality
 #: model:ir.module.module,shortdesc:mgmtsystem_quality.module_meta_information
 msgid " Quality Management System"
-msgstr " Quality Management System"
+msgstr " Sistema Gestione Qualità"
 
 #. module: mgmtsystem_quality
 #: model:ir.module.module,description:mgmtsystem_quality.module_meta_information
@@ -31,11 +31,11 @@ msgid "\n"
 "            * Actions\n"
 "    "
 msgstr "\n"
-"	This module enables you to manage your quality management system, including :\n"
-"            * Quality Manual\n"
-"            * Audits\n"
-"            * Procedures\n"
-"            * Nonconformities\n"
-"            * Actions\n"
+"	Qiuesto modulo permette di gestire Sistemi di Gestione Qualità, in relazione a :\n"
+"            * Manuale Qualità\n"
+"            * Audit\n"
+"            * Procedure\n"
+"            * Non Conformità\n"
+"            * Azioni\n"
 "    "
 
