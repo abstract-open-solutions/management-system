@@ -18,12 +18,12 @@ msgstr ""
 #. module: document_page_environment_manual
 #: model:ir.module.module,shortdesc:document_page_environment_manual.module_meta_information
 msgid "Document Management - Wiki - Environment Manual"
-msgstr "Document Management - Wiki - Environment Manual"
+msgstr "Gestione Documenti - Wiki - Manuale Ambiente"
 
 #. module: document_page_environment_manual
 #: model:ir.module.module,description:document_page_environment_manual.module_meta_information
 msgid "Environment Manual Template\n"
 "    "
-msgstr "Environment Manual Template\n"
+msgstr "Template Manuale Ambiente\n"
 "    "
 
