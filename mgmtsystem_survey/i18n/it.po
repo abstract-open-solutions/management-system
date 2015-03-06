@@ -18,13 +18,13 @@ msgstr ""
 #. module: mgmtsystem_survey
 #: model:ir.ui.menu,name:mgmtsystem_survey.menu_open_answers
 msgid "Survey Answers"
-msgstr "Réponses au questionnaire"
+msgstr "Risposte al questionario"
 
 #. module: mgmtsystem_survey
 #: model:ir.actions.act_window,name:mgmtsystem_survey.action_survey_form
 #: model:ir.ui.menu,name:mgmtsystem_survey.menu_open_survey
 msgid "Surveys"
-msgstr "Sondages"
+msgstr "Sondaggi"
 
 #. module: mgmtsystem_survey
 #: model:ir.module.module,description:mgmtsystem_survey.module_meta_information
@@ -33,12 +33,12 @@ msgid "\n"
 "        and its answers.\n"
 "    "
 msgstr "\n"
-"	Ce module vous permet de gérer votre questionnaire de satisfaction\n"
-"       et ces réponses.\n"
+"	Questo modulo permette di gestire sondaggi per la rilevazione della soddisfazione \n"
+"       con relative risposte.\n"
 "    "
 
 #. module: mgmtsystem_survey
 #: model:ir.module.module,shortdesc:mgmtsystem_survey.module_meta_information
 msgid "Management System - Survey"
-msgstr "Système de gestion - Questionnaire"
+msgstr "Sistema di Gestione Qualità - Sondaggio"
 
