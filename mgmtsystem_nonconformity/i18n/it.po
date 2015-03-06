@@ -56,7 +56,7 @@ msgstr "Attivo?"
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity:0
 msgid "Add a description ..."
-msgstr "Aggiunginuna descrizione ..."
+msgstr "Aggiungi una descrizione ..."
 
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity:0 field:mgmtsystem.nonconformity,analysis:0
