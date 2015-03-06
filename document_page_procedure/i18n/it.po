@@ -19,11 +19,11 @@ msgstr ""
 #: model:ir.module.module,description:document_page_procedure.module_meta_information
 msgid "Procedure Template\n"
 "    "
-msgstr "Procedure Template\n"
+msgstr "Template Procedura\n"
 "    "
 
 #. module: document_page_procedure
 #: model:ir.module.module,shortdesc:document_page_procedure.module_meta_information
 msgid "Document Management - Wiki - Procedures"
-msgstr "Document Management - Wiki - Procedures"
+msgstr "Gestione Documenti - Wiki - Procedure"
 
