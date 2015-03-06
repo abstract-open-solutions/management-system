@@ -18,11 +18,11 @@ msgstr ""
 #. module: document_page_work_instructions
 #: model:ir.actions.act_window,help:document_page_work_instructions.work_instructions_action
 msgid "Work instructions of your management system."
-msgstr ""
+msgstr "Istruzioni di lavoro del tuo Sistema di Gestione Qualità"
 
 #. module: document_page_work_instructions
 #: model:ir.actions.act_window,name:document_page_work_instructions.work_instructions_action
 #: model:ir.ui.menu,name:document_page_work_instructions.menu_mgmtsystem_manuals_work_instructions
 msgid "Work Instructions"
-msgstr ""
+msgstr "Istruzioni di lavoro"
 
