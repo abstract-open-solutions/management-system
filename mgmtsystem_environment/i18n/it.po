@@ -26,16 +26,16 @@ msgid "\n"
 "            * Actions\n"
 "    "
 msgstr "\n"
-"	This module enables you to manage your environment management system, including :\n"
-"            * Environment Manual\n"
-"            * Audits\n"
-"            * Procedures\n"
-"            * Nonconformities\n"
-"            * Actions\n"
+"	Questo modulo permette di gestire il Sistema di Gestione Qualità Ambientale, in relazione a :\n"
+"            * Manuale Ambiente\n"
+"            * Audit\n"
+"            * Procedure\n"
+"            * Non Conformità\n"
+"            * Azioni\n"
 "    "
 
 #. module: mgmtsystem_environment
 #: model:ir.module.module,shortdesc:mgmtsystem_environment.module_meta_information
 msgid "Environment Management System"
-msgstr "Environment Management System"
+msgstr "Sistema Gestione Qualità Ambientale"
 
