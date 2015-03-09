@@ -19,29 +19,29 @@ msgstr ""
 #: view:mgmtsystem.hazard.risk.computation:0
 #: field:res.company,risk_computation_id:0
 msgid "Risk Computation"
-msgstr ""
+msgstr "Computazione del Rischio"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard.test,name:0
 msgid "Test"
-msgstr ""
+msgstr "Test"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_hazard.hazard_fire_explosion
 msgid "Fire / Explosion"
-msgstr ""
+msgstr "Fuoco / Esplosione"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_usage
 msgid "Usage of hazard"
-msgstr ""
+msgstr "Uso del pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_probability_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_probability
 #: view:mgmtsystem.hazard.probability:0
 msgid "Probabilities"
-msgstr ""
+msgstr "Probabilità"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_test_list
@@ -49,14 +49,14 @@ msgstr ""
 #: field:mgmtsystem.hazard,test_ids:0
 #: view:mgmtsystem.hazard.test:0
 msgid "Implementation Tests"
-msgstr ""
+msgstr "Test di Implementazione"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,responsible_user_id:0
 #: field:mgmtsystem.hazard.control_measure,responsible_user_id:0
 #: field:mgmtsystem.hazard.test,responsible_user_id:0
 msgid "Responsible"
-msgstr ""
+msgstr "Responsabile"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_hazard_list
@@ -66,63 +66,63 @@ msgstr ""
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_hazard
 #: view:mgmtsystem.hazard.hazard:0
 msgid "Hazards"
-msgstr ""
+msgstr "Pericoli"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard.control_measure,comments:0
 msgid "Comments"
-msgstr ""
+msgstr "Commenti"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_hazard.risk_type_environment
 msgid "Environment"
-msgstr ""
+msgstr "Ambiente"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard:0
 msgid "Group By..."
-msgstr ""
+msgstr "Raggruppa per..."
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_hazard.severity_critical
 msgid "Critical"
-msgstr ""
+msgstr "Critico"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_hazard.probability_low
 #: model:mgmtsystem.hazard.usage,name:mgmtsystem_hazard.usage_low
 msgid "Low"
-msgstr ""
+msgstr "Basso"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_hazard.hazard_electric_bilge
 msgid "Electric Bilge"
-msgstr ""
+msgstr "Sentina Elettrica"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.usage,name:mgmtsystem_hazard.usage_very_high
 msgid "Very High"
-msgstr ""
+msgstr "Molto Alto"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,department_id:0
 msgid "Department"
-msgstr ""
+msgstr "Dipartimento"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_hazard.probability_probably
 msgid "Probably"
-msgstr ""
+msgstr "Probabile"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_origin
 msgid "Origin of hazard"
-msgstr ""
+msgstr "Origine del pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard
 msgid "Hazards of the health and safety management system"
-msgstr ""
+msgstr "Pericoli del Sistema Gestione Qualità Ambiente e Sicurezza"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_control_measure_list
@@ -130,7 +130,7 @@ msgstr ""
 #: field:mgmtsystem.hazard,control_measure_ids:0
 #: view:mgmtsystem.hazard.control_measure:0
 msgid "Control Measures"
-msgstr ""
+msgstr "Misure di Controllo"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,severity_id:0
@@ -138,28 +138,28 @@ msgstr ""
 #: view:mgmtsystem.hazard.severity:0
 #: field:mgmtsystem.hazard.severity,name:0
 msgid "Severity"
-msgstr ""
+msgstr "Gravità"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_hazard.hazard_spilling
 msgid "Spilling"
-msgstr ""
+msgstr "Versamento"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_hazard.type_ems_action
 msgid "EMS - Action"
-msgstr ""
+msgstr "EMS - Azione"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,justification:0
 #: field:mgmtsystem.hazard.residual_risk,justification:0
 msgid "Justification"
-msgstr ""
+msgstr "Giustificazione"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_leak
 msgid "Gas Leak"
-msgstr ""
+msgstr "Fuga di gas"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard.hazard,description:0
@@ -171,22 +171,22 @@ msgstr ""
 #: field:mgmtsystem.hazard.type,description:0
 #: field:mgmtsystem.hazard.usage,description:0
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_exposure
 msgid "Exposure to Hazardous Materials"
-msgstr ""
+msgstr "Esposizione a Materiali Pericolosi"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_panic
 msgid "Panic"
-msgstr ""
+msgstr "Panico"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_hazard.type_ohsas_position
 msgid "OHSAS - Position"
-msgstr ""
+msgstr "OHSAS - Posizione"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_hazard
@@ -198,62 +198,62 @@ msgstr ""
 #: field:mgmtsystem.hazard.residual_risk,hazard_id:0
 #: field:mgmtsystem.hazard.test,hazard_id:0
 msgid "Hazard"
-msgstr ""
+msgstr "Pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_residual_risk_list
 #: view:mgmtsystem.hazard.residual_risk:0
 msgid "Residual Risks"
-msgstr ""
+msgstr "Rischio Residuale"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard.control_measure:0
 #: field:mgmtsystem.hazard.control_measure,name:0
 msgid "Control Measure"
-msgstr ""
+msgstr "Misura di Controllo"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_containment
 msgid "Containment Failure"
-msgstr ""
+msgstr "Fallimento nel Contenimento"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_control_measure
 msgid "Control Measure of hazard"
-msgstr ""
+msgstr "Misura di Controllo del Pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_hazard.hazard_intoxication
 msgid "Intoxication"
-msgstr ""
+msgstr "Intossicazione"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard:0
 #: field:mgmtsystem.hazard,residual_risk_ids:0
 msgid "Residual Risk Evaluations"
-msgstr ""
+msgstr "Valutazione del Rischio Residuo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_severity_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_severity
 #: view:mgmtsystem.hazard.severity:0
 msgid "Severities"
-msgstr ""
+msgstr "Gravità"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,analysis_date:0
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_hazard.hazard_breakage
 msgid "Breakage"
-msgstr ""
+msgstr "Rottura"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard:0
 msgid "Accepted"
-msgstr ""
+msgstr "Accettato"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,usage_id:0
@@ -261,155 +261,155 @@ msgstr ""
 #: view:mgmtsystem.hazard.usage:0
 #: field:mgmtsystem.hazard.usage,name:0
 msgid "Occupation / Usage"
-msgstr ""
+msgstr "Occupazione / Uso"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_type_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_type
 #: view:mgmtsystem.hazard.type:0
 msgid "Types"
-msgstr ""
+msgstr "Tipi"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_probability
 msgid "Probability of hazard"
-msgstr ""
+msgstr "Probabilità di pericolo"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard.probability,value:0
 #: field:mgmtsystem.hazard.severity,value:0
 #: field:mgmtsystem.hazard.usage,value:0
 msgid "Value"
-msgstr ""
+msgstr "Valore"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,origin_id:0
 #: view:mgmtsystem.hazard.origin:0
 #: field:mgmtsystem.hazard.origin,name:0
 msgid "Origin"
-msgstr ""
+msgstr "Origine"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,risk_type_id:0
 #: view:mgmtsystem.hazard.risk.type:0
 #: field:mgmtsystem.hazard.risk.type,name:0
 msgid "Risk Type"
-msgstr ""
+msgstr "Tipo di Rischio"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard.residual_risk:0
 msgid "Residual Risk"
-msgstr ""
+msgstr "Rischio Residuale"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,name:0
 #: field:mgmtsystem.hazard.residual_risk,name:0
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_origin_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_origin
 #: view:mgmtsystem.hazard.origin:0
 msgid "Origins"
-msgstr ""
+msgstr "Origini"
 
 #. module: mgmtsystem_hazard
 #: view:res.company:0
 msgid "Management System"
-msgstr ""
+msgstr "Sistema Gestione Qualità"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_hazard.probability_maybe
 msgid "Maybe"
-msgstr ""
+msgstr "Probabile"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_hazard.type_ohsas_action
 msgid "OHSAS - Action"
-msgstr ""
+msgstr "OHSAS - Azione"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Aziende"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_usage_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_usage
 #: view:mgmtsystem.hazard.usage:0
 msgid "Occupations / Usages"
-msgstr ""
+msgstr "Occupazioni / Usi"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard:0
 msgid "Analysis"
-msgstr ""
+msgstr "Analisi"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_type
 msgid "Type of hazard"
-msgstr ""
+msgstr "Tipo di pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_severity
 msgid "Severity of hazard"
-msgstr ""
+msgstr "Gravità del pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_hazard.severity_medium
 #: model:mgmtsystem.hazard.usage,name:mgmtsystem_hazard.usage_medium
 msgid "Medium"
-msgstr ""
+msgstr "Medio"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_residual_risk
 msgid "Residual Risks of hazard"
-msgstr ""
+msgstr "Rischio Residuo del Pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_test
 msgid "Implementation Tests of hazard"
-msgstr ""
+msgstr "Test di implementazione del Rischio"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_ignition_gas
 msgid "Ignition of Flammable Gas"
-msgstr ""
+msgstr "Accensione di Gas Infiammabili"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_risk_type_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_risk_type
 #: view:mgmtsystem.hazard.risk.type:0
 msgid "Risk Types"
-msgstr ""
+msgstr "Tipi di Rischio"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_risk_type
 msgid "Risk type of the hazard"
-msgstr ""
+msgstr "Tipo di Rischio del pericolo"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_risk_computation
 #: field:mgmtsystem.hazard.risk.computation,name:0
 msgid "Computation Risk"
-msgstr ""
+msgstr "Rischio di Calcolo"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,risk:0
 #: field:mgmtsystem.hazard.residual_risk,risk:0
 msgid "Risk"
-msgstr ""
+msgstr "Rischio"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_hazard.severity_heavy
 msgid "Heavy"
-msgstr ""
+msgstr "Pesante"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_hazard.risk_type_chemical
 msgid "Chemical"
-msgstr ""
+msgstr "Chimico"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard:0
@@ -417,17 +417,17 @@ msgstr ""
 #: view:mgmtsystem.hazard.type:0
 #: field:mgmtsystem.hazard.type,name:0
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard.test,executed:0
 msgid "Executed"
-msgstr ""
+msgstr "Eseguito"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard:0
 msgid "Risk Evaluation"
-msgstr ""
+msgstr "Valutazione del Rischio"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,probability_id:0
@@ -435,68 +435,68 @@ msgstr ""
 #: field:mgmtsystem.hazard.probability,name:0
 #: field:mgmtsystem.hazard.residual_risk,probability_id:0
 msgid "Probability"
-msgstr ""
+msgstr "Probabilità"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_hazard.severity_simple
 msgid "Simple"
-msgstr ""
+msgstr "Semplice"
 
 #. module: mgmtsystem_hazard
 #: view:mgmtsystem.hazard.test:0
 msgid "Implementation Test"
-msgstr ""
+msgstr "Test di Implementazione"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_hazard.type_ems_position
 msgid "EMS - Position"
-msgstr ""
+msgstr "EMS - Posizione"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.usage,name:mgmtsystem_hazard.usage_high
 msgid "High"
-msgstr ""
+msgstr "Alto"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_hazard.risk_type_fire
 msgid "Fire"
-msgstr ""
+msgstr "Fuoco"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.usage,name:mgmtsystem_hazard.usage_very_low
 msgid "Very low"
-msgstr ""
+msgstr "Molto basso"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard.test,review_date:0
 msgid "Review Date"
-msgstr ""
+msgstr "Data Review"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_aging
 msgid "Materials Aging"
-msgstr ""
+msgstr "Invecchiamento dei Materiali"
 
 #. module: mgmtsystem_hazard
 #: model:ir.actions.act_window,name:mgmtsystem_hazard.open_mgmtsystem_hazard_risk_computation_list
 #: model:ir.ui.menu,name:mgmtsystem_hazard.menu_open_hazard_risk_computation
 #: view:mgmtsystem.hazard.risk.computation:0
 msgid "Risk Computations"
-msgstr ""
+msgstr "Calcolo del Rischio"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,acceptability:0
 #: field:mgmtsystem.hazard.residual_risk,acceptability:0
 msgid "Acceptability"
-msgstr ""
+msgstr "Accettabilità"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_hazard.probability_very_likely
 msgid "Very likely"
-msgstr ""
+msgstr "Molto Probabile"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_hazard.risk_type_physical
 msgid "Physical"
-msgstr ""
+msgstr "Fisico"
 
