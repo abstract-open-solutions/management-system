@@ -19,40 +19,25 @@
 #
 ##############################################################################
 
-from osv import fields, orm
+from openerp import fields, models, api
+
+own_company = lambda self: self.env.user.company_id.id
 
 
-class mgmtsystem_claim(orm.Model):
+class mgmtsystem_claim(models.Model):
     _name = "mgmtsystem.claim"
     _description = "Claim"
     _inherit = "crm.claim"
-    _columns = {
-        'reference': fields.char(
-            'Reference',
-            size=64,
-            required=True,
-            readonly=True,
-        ),
-        'message_ids': fields.one2many(
-            'mail.message',
-            'res_id',
-            'Messages',
-            domain=[('model', '=', _name)],
-        ),
-        'company_id': fields.many2one('res.company', 'Company')
-    }
 
-    _defaults = {
-        'company_id': (
-            lambda self, cr, uid, c:
-            self.pool.get('res.users').browse(cr, uid, uid, c).company_id.id),
-        'reference': 'NEW',
-    }
+    reference = fields.Char('Reference', required=True, readonly=True,
+                            default='NEW')
+    message_ids = fields.One2many('mail.message', 'res_id', 'Messages',
+                                  domain=[('model', '=', _name)])
+    company_id = fields.Many2one('res.company', 'Company', default=own_company)
 
-    def create(self, cr, uid, vals, context=None):
+    @api.model
+    def create(self, vals):
         vals.update({
-            'reference': self.pool.get('ir.sequence').get(
-                cr, uid, 'mgmtsystem.claim'
-            )
+            'reference': self.env['ir.sequence'].get('mgmtsystem.claim')
         })
-        return super(mgmtsystem_claim, self).create(cr, uid, vals, context)
+        return super(mgmtsystem_claim, self).create(vals)
