@@ -247,7 +247,7 @@ msgstr "Audit Esterno"
 #. module: mgmtsystem_nonconformity
 #: model:mgmtsystem.nonconformity.origin,name:mgmtsystem_nonconformity.nc_origin_external_client
 msgid "External client complaint"
-msgstr "Recamo Cliente Esterno"
+msgstr "Reclamo Cliente Esterno"
 
 #. module: mgmtsystem_nonconformity
 #: field:mgmtsystem.nonconformity,author_user_id:0
@@ -276,8 +276,8 @@ msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
 msgstr ""
-"Contiene il riepologo Chatters (numero di messaggi, ...). Questo riepilogo è "
-"direttamente in formato HTML per essere inserito in viste kanban."
+"Contiene il riepilogo Chat (numero di messaggi, ...). Questo riepilogo è "
+"direttamente in formato HTML per l'inserimento in viste kanban."
 
 #. module: mgmtsystem_nonconformity
 #: model:mgmtsystem.nonconformity.cause,name:mgmtsystem_nonconformity.hr_unavailable_inadequate
@@ -421,7 +421,7 @@ msgstr "Origini"
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity.origin:0
 msgid "Origins of nonconformity"
-msgstr "Otigini della Non Conformità"
+msgstr "Origini della Non Conformità"
 
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity:0 field:mgmtsystem.nonconformity,partner_id:0
