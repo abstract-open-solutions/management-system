@@ -59,7 +59,7 @@ msgstr "Priorità"
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:0
 msgid "Group By..."
-msgstr "Raggruppa per ..."
+msgstr "Raggruppa per..."
 
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:0
@@ -213,7 +213,7 @@ msgstr "Telefono"
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,message_is_follower:0
 msgid "Is a Follower"
-msgstr "E' un Follower"
+msgstr "È un Follower"
 
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:0
@@ -320,7 +320,7 @@ msgstr "Azioni Chiuse"
 #. module: mgmtsystem_action
 #: selection:mgmtsystem.action,state:0
 msgid "Cancelled"
-msgstr "Cancellato"
+msgstr "Annullato"
 
 #. module: mgmtsystem_action
 #: selection:mgmtsystem.action,type_action:0
@@ -398,7 +398,7 @@ msgstr "Partner"
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:0
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Annulla"
 
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:0
