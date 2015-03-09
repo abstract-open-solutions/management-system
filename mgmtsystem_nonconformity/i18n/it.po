@@ -92,7 +92,7 @@ msgstr "Autore"
 #. module: mgmtsystem_nonconformity
 #: model:mgmtsystem.nonconformity.cause,name:mgmtsystem_nonconformity.bad_communication
 msgid "Bad communication"
-msgstr ""
+msgstr "Cattiva comunicazione"
 
 #. module: mgmtsystem_nonconformity
 #: model:mgmtsystem.nonconformity.cause,name:mgmtsystem_nonconformity.bad_partner_relation
@@ -294,7 +294,7 @@ msgstr "ID"
 #. module: mgmtsystem_nonconformity
 #: help:mgmtsystem.nonconformity,message_unread:0
 msgid "If checked new messages require your attention."
-msgstr "Se selzionato nuovi messaggi richiedono la tua attenzione"
+msgstr "Se selezionato nuovi messaggi richiedono la tua attenzione"
 
 #. module: mgmtsystem_nonconformity
 #: field:mgmtsystem.nonconformity,immediate_action_id:0
@@ -356,7 +356,7 @@ msgstr "Messaggi"
 #. module: mgmtsystem_nonconformity
 #: help:mgmtsystem.nonconformity,message_ids:0
 msgid "Messages and communication history"
-msgstr "Messaggi e storico comunicazioni"
+msgstr "Messaggi e Storico Comunicazioni"
 
 #. module: mgmtsystem_nonconformity
 #: model:mgmtsystem.nonconformity.severity,name:mgmtsystem_nonconformity.nonconformity_severity_min
@@ -436,7 +436,7 @@ msgstr "Approvazione in attesa"
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity:0
 msgid "Plan Review"
-msgstr "Piano Revview"
+msgstr "Piano Review"
 
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity:0
@@ -531,7 +531,7 @@ msgstr "Gravità"
 #: view:mgmtsystem.nonconformity.severity:0
 #, python-format
 msgid "Severity of Complaints and Nonconformities"
-msgstr "Gravità di reclami e Non Conformità"
+msgstr "Gravità Reclami e Non Conformità"
 
 #. module: mgmtsystem_nonconformity
 #: view:mgmtsystem.nonconformity:0
