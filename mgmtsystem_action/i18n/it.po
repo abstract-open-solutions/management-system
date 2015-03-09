@@ -223,7 +223,7 @@ msgstr "Utente"
 #. module: mgmtsystem_action
 #: help:mgmtsystem.action,state:0
 msgid "The status is set to 'Draft', when a case is created.                      If the case is in progress the status is set to 'Open'.                      When the case is over, the status is set to 'Done'.                      If the case needs to be reviewed then the status is                       set to 'Pending'."
-msgid "Lo stato è impostato a 'Bozza' quando il caso viene creato.  Se il caso è in lavorazione lo stato viene impostato a 'Aperto'. Quanto il caso è ultimato lo stato viene impostato a 'Done'. Se il caso necessita di una revisione allora lo stato è impostato a 'In attesa'."
+msgstr "Lo stato è impostato a 'Bozza' quando il caso viene creato.  Se il caso è in lavorazione lo stato viene impostato a 'Aperto'. Quanto il caso è ultimato lo stato viene impostato a 'Done'. Se il caso necessita di una revisione allora lo stato è impostato a 'In attesa'."
 
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:0
