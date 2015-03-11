@@ -1,13 +1,13 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* mgmtsystem_review
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.1-dev\n"
-"Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-07-25 18:15+0000\n"
-"PO-Revision-Date: 2011-07-25 18:15+0000\n"
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-11 11:50+0000\n"
+"PO-Revision-Date: 2015-03-11 11:50+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,85 +16,10 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: mgmtsystem_review
-#: model:ir.module.module,shortdesc:mgmtsystem_review.module_meta_information
-msgid "Management System - Review"
-msgstr "Sistema Gestione Qualità - Review"
-
-#. module: mgmtsystem_review
-#: report:mgmtsystem.review.report:0
-msgid "Review Report"
-msgstr "Report della Review"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-msgid "Closed Reviews"
-msgstr "Review Chiuse"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: report:mgmtsystem.review.report:0
-msgid "Changes affecting the management systems"
-msgstr "Cambiamenti che impattano sul Sistema Gestione Qualità"
-
-#. module: mgmtsystem_review
-#: report:mgmtsystem.review.report:0
-msgid "Date:"
-msgstr "Data:"
-
-#. module: mgmtsystem_review
-#: report:mgmtsystem.review.report:0
-msgid "Confidentiality: Direction Review"
-msgstr "Riservatezza: Review della Direzione"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: field:mgmtsystem.review,user_ids:0
-msgid "Participants"
-msgstr "Partecipanti"
-
-#. module: mgmtsystem_review
-#: model:ir.actions.report.xml,name:mgmtsystem_review.mgmtsystem_review_report
-msgid "Print Report"
-msgstr "Stampa Report"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: selection:mgmtsystem.review,state:0
-msgid "Closed"
-msgstr "Chiuso"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: field:mgmtsystem.review,policy:0
-msgid "Policy"
-msgstr "Policy"
-
-#. module: mgmtsystem_review
-#: field:mgmtsystem.review.line,decision:0
-msgid "Decision"
-msgstr "Decisione"
-
-#. module: mgmtsystem_review
-#: field:mgmtsystem.review.line,type:0
-msgid "Type"
-msgstr "Tipo"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: field:mgmtsystem.review,conclusion:0
-#: report:mgmtsystem.review.report:0
-msgid "Conclusion"
-msgstr "Conclusione"
-
-#. module: mgmtsystem_review
-#: report:mgmtsystem.review.report:0
-msgid "Satisfaction Survey Answers"
-msgstr "Risposte Sondaggio Rilevazione Soddisfazione"
-
-#. module: mgmtsystem_review
-#: report:mgmtsystem.review.report:0
-msgid "Comments:"
-msgstr "Commenti:"
+#: field:mgmtsystem.review.line,action_id:0
+#: selection:mgmtsystem.review.line,type:0
+msgid "Action"
+msgstr "Azione"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -102,24 +27,81 @@ msgid "Action:"
 msgstr "Azione:"
 
 #. module: mgmtsystem_review
+#: field:mgmtsystem.review,changes:0
+msgid "Changes"
+msgstr "Changes"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
 #: report:mgmtsystem.review.report:0
-msgid ")"
-msgstr ")"
+msgid "Changes affecting the management systems"
+msgstr "Cambiamenti che impattano sul Sistema Gestione Qualità"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+msgid "Close"
+msgstr "Chiudi"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
+#: selection:mgmtsystem.review,state:0
+msgid "Closed"
+msgstr "Chiuso"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
+msgid "Closed Reviews"
+msgstr "Review Chiuse"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
-msgid "("
-msgstr "("
+msgid "Comments:"
+msgstr "Commenti:"
 
 #. module: mgmtsystem_review
-#: field:mgmtsystem.review.line,name:0
-msgid "Title"
-msgstr "Titolo"
+#: field:mgmtsystem.review,company_id:0
+#: field:mgmtsystem.review.line,company_id:0
+msgid "Company"
+msgstr "Company"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: field:mgmtsystem.review,conclusion:0
+#: report:mgmtsystem.review.report:0
+msgid "Conclusion"
+msgstr "Conclusione"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
-msgid "-"
-msgstr "-"
+msgid "Confidentiality: Direction Review"
+msgstr "Riservatezza: Review della Direzione"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,create_uid:0
+#: field:mgmtsystem.review.line,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,create_date:0
+#: field:mgmtsystem.review.line,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: mgmtsystem_review
+#: report:mgmtsystem.review.report:0
+msgid "Date:"
+msgstr "Data:"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review.line,decision:0
+msgid "Decision"
+msgstr "Decision"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -127,24 +109,49 @@ msgid "Decision:"
 msgstr "Decisione:"
 
 #. module: mgmtsystem_review
-#: field:mgmtsystem.review,date:0
-msgid "Date"
-msgstr "Data"
-
-#. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
-msgid "State:"
-msgstr "Stato:"
+msgid "Expectations:"
+msgstr "Aspettative:"
 
 #. module: mgmtsystem_review
-#: field:mgmtsystem.review.line,nonconformity_id:0
-msgid "Nonconformity"
-msgstr "Non Conformità"
+#: field:mgmtsystem.review,id:0
+#: field:mgmtsystem.review.line,id:0
+msgid "ID"
+msgstr "ID"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
 msgid "Improvements:"
-msgstr "Miglioramenti:"
+msgstr "Improvements:"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: report:mgmtsystem.review.report:0
+msgid "Inputs"
+msgstr "Inputs"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,write_uid:0
+#: field:mgmtsystem.review.line,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,write_date:0
+#: field:mgmtsystem.review.line,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: field:mgmtsystem.review,line_ids:0
+msgid "Lines"
+msgstr "Linee"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,name:0
+msgid "Name"
+msgstr "Name"
 
 #. module: mgmtsystem_review
 #: selection:mgmtsystem.review.line,type:0
@@ -152,84 +159,26 @@ msgid "Noncomformity"
 msgstr "Non Comformità"
 
 #. module: mgmtsystem_review
-#: model:ir.model,name:mgmtsystem_review.model_mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: field:mgmtsystem.review.line,review_id:0
-msgid "Review"
-msgstr "Review"
+#: field:mgmtsystem.review.line,nonconformity_id:0
+msgid "Nonconformity"
+msgstr "Nonconformity"
 
 #. module: mgmtsystem_review
-#: field:mgmtsystem.review,name:0
-msgid "Name"
-msgstr "Nome"
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
+#: selection:mgmtsystem.review,state:0
+msgid "Open"
+msgstr "Apri"
 
 #. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: report:mgmtsystem.review.report:0
-msgid "Inputs"
-msgstr "Inputs"
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
+msgid "Open Reviews"
+msgstr "Review Aperte"
 
 #. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: field:mgmtsystem.review,line_ids:0
-msgid "Lines"
-msgstr "Linee"
-
-#. module: mgmtsystem_review
-#: model:ir.actions.act_window,name:mgmtsystem_review.open_mgmtsystem_review_list
-#: model:ir.ui.menu,name:mgmtsystem_review.menu_open_review
-#: view:mgmtsystem.review:0
-msgid "Reviews"
-msgstr "Review"
-
-#. module: mgmtsystem_review
-#: model:ir.model,name:mgmtsystem_review.model_mgmtsystem_review_line
-#: view:mgmtsystem.review.line:0
-msgid "Review Line"
-msgstr "Linee Review"
-
-#. module: mgmtsystem_review
-#: field:mgmtsystem.review,state:0
-msgid "State"
-msgstr "Stato"
-
-#. module: mgmtsystem_review
-#: report:mgmtsystem.review.report:0
-msgid "Policies"
-msgstr "Policy"
-
-#. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: field:mgmtsystem.review,response_ids:0
-msgid "Survey Answers"
-msgstr "Risposte Sondaggio"
-
-#. module: mgmtsystem_review
-#: field:mgmtsystem.review.line,action_id:0
-#: selection:mgmtsystem.review.line,type:0
-msgid "Action"
-msgstr "Azione"
-
-#. module: mgmtsystem_review
-#: model:ir.module.module,description:mgmtsystem_review.module_meta_information
-msgid "\n"
-"	This module enables you to manage reviews of \n"
-"        your management system.\n"
-"    "
-msgstr "\n"
-"	Questo modulo permette di gestire le review \n"
-"       del Sistema Gestione Qualità.\n"
-"    "
-
-#. module: mgmtsystem_review
-#: field:mgmtsystem.review,changes:0
-msgid "Changes"
-msgstr "Cambiamenti"
-
-#. module: mgmtsystem_review
-#: field:mgmtsystem.review,reference:0
-msgid "Reference"
-msgstr "Referenza"
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: field:mgmtsystem.review,user_ids:0
+msgid "Participants"
+msgstr "Partecipanti"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -238,33 +187,92 @@ msgstr "Partecipanti:"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
+msgid "Policies"
+msgstr "Policy"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: field:mgmtsystem.review,policy:0
+msgid "Policy"
+msgstr "Policy"
+
+#. module: mgmtsystem_review
+#: model:ir.actions.report.xml,name:mgmtsystem_review.mgmtsystem_review_report
+msgid "Print Report"
+msgstr "Stampa Report"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review,reference:0
+msgid "Reference"
+msgstr "Reference"
+
+#. module: mgmtsystem_review
+#: report:mgmtsystem.review.report:0
 msgid "Reference:"
 msgstr "Referenza:"
 
 #. module: mgmtsystem_review
+#: model:ir.model,name:mgmtsystem_review.model_mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: field:mgmtsystem.review.line,review_id:0
+msgid "Review"
+msgstr "Review"
+
+#. module: mgmtsystem_review
+#: model:ir.model,name:mgmtsystem_review.model_mgmtsystem_review_line
+#: view:mgmtsystem.review.line:mgmtsystem_review.view_mgmtsystem_review_line_form
+msgid "Review Line"
+msgstr "Linee Review"
+
+#. module: mgmtsystem_review
 #: model:ir.actions.act_window,name:mgmtsystem_review.open_mgmtsystem_review_line_list
-#: view:mgmtsystem.review.line:0
+#: view:mgmtsystem.review.line:mgmtsystem_review.view_mgmtsystem_review_line_filter
+#: view:mgmtsystem.review.line:mgmtsystem_review.view_mgmtsystem_review_line_tree
 msgid "Review Lines"
 msgstr "Linee Review"
 
 #. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-msgid "Open Reviews"
-msgstr "Review Aperte"
+#: report:mgmtsystem.review.report:0
+msgid "Review Report"
+msgstr "Report della Review"
+
+#. module: mgmtsystem_review
+#: model:ir.actions.act_window,name:mgmtsystem_review.open_mgmtsystem_review_list
+#: model:ir.ui.menu,name:mgmtsystem_review.menu_open_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_tree
+#: view:mgmtsystem.review:mgmtsystem_review.view_review_calendar
+msgid "Reviews"
+msgstr "Review"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
-msgid "Expectations:"
-msgstr "Aspettative:"
+msgid "Satisfaction Survey Answers"
+msgstr "Risposte Sondaggio Rilevazione Soddisfazione"
 
 #. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-msgid "Close"
-msgstr "Chiudi"
+#: field:mgmtsystem.review,state:0
+msgid "State"
+msgstr "State"
 
 #. module: mgmtsystem_review
-#: view:mgmtsystem.review:0
-#: selection:mgmtsystem.review,state:0
-msgid "Open"
-msgstr "Apri"
+#: report:mgmtsystem.review.report:0
+msgid "State:"
+msgstr "Stato:"
+
+#. module: mgmtsystem_review
+#: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
+#: field:mgmtsystem.review,response_ids:0
+msgid "Survey Answers"
+msgstr "Risposte Sondaggio"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review.line,name:0
+msgid "Title"
+msgstr "Title"
+
+#. module: mgmtsystem_review
+#: field:mgmtsystem.review.line,type:0
+msgid "Type"
+msgstr "Type"
 

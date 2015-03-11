@@ -1,13 +1,13 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* mgmtsystem_survey
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.1-dev\n"
-"Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-07-25 18:17+0000\n"
-"PO-Revision-Date: 2011-07-25 18:17+0000\n"
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-11 11:50+0000\n"
+"PO-Revision-Date: 2015-03-11 11:50+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,55 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: mgmtsystem_survey
-#: model:ir.ui.menu,name:mgmtsystem_survey.menu_open_answers
-msgid "Survey Answers"
-msgstr "Risposte al questionario"
+#: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_improvements
+msgid "And what should be improved?"
+msgstr "And what should be improved?"
+
+#. module: mgmtsystem_survey
+#: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_company
+msgid "Company / Organization"
+msgstr "Company / Organization"
+
+#. module: mgmtsystem_survey
+#: model:survey.page,title:mgmtsystem_survey.mgmtsystem_survey_page
+#: model:survey.survey,title:mgmtsystem_survey.mgmtsystem_survey_satisfaction
+msgid "Customer Satisfaction Survey"
+msgstr "Customer Satisfaction Survey"
+
+#. module: mgmtsystem_survey
+#: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_expectations
+msgid "Finally, what do you expect from us?"
+msgstr "Finally, what do you expect from us?"
+
+#. module: mgmtsystem_survey
+#: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_comments
+#: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_company
+#: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_expectations
+#: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_improvements
+#: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_name
+#: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_reference
+msgid "If other, precise:"
+msgstr "If other, precise:"
+
+#. module: mgmtsystem_survey
+#: model:survey.stage,name:mgmtsystem_survey.mgmtsystem_survey_type
+msgid "Management System"
+msgstr "Management System"
+
+#. module: mgmtsystem_survey
+#: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_name
+msgid "Name"
+msgstr "Name"
+
+#. module: mgmtsystem_survey
+#: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_comments
+msgid "Please feel free to add any additional comments in regards to the previous questions"
+msgstr "Please feel free to add any additional comments in regards to the previous questions"
+
+#. module: mgmtsystem_survey
+#: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_reference
+msgid "Reference (project name, contract/PO/quote #)"
+msgstr "Reference (project name, contract/PO/quote #)"
 
 #. module: mgmtsystem_survey
 #: model:ir.actions.act_window,name:mgmtsystem_survey.action_survey_form
@@ -27,18 +73,22 @@ msgid "Surveys"
 msgstr "Sondaggi"
 
 #. module: mgmtsystem_survey
-#: model:ir.module.module,description:mgmtsystem_survey.module_meta_information
-msgid "\n"
-"	This module enables you to manage your satisfaction surveys\n"
-"        and its answers.\n"
-"    "
-msgstr "\n"
-"	Questo modulo permette di gestire sondaggi per la rilevazione della soddisfazione \n"
-"       con relative risposte.\n"
-"    "
+#: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_comments
+#: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_company
+#: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_expectations
+#: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_improvements
+#: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_name
+#: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_reference
+msgid "The answer you entered has an invalid format."
+msgstr "The answer you entered has an invalid format."
 
 #. module: mgmtsystem_survey
-#: model:ir.module.module,shortdesc:mgmtsystem_survey.module_meta_information
-msgid "Management System - Survey"
-msgstr "Sistema di Gestione Qualità - Sondaggio"
+#: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_comments
+#: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_company
+#: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_expectations
+#: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_improvements
+#: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_name
+#: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_reference
+msgid "This question requires an answer."
+msgstr "This question requires an answer."
 
