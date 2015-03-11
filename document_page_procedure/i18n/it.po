@@ -19,10 +19,10 @@ msgstr ""
 #: model:ir.actions.act_window,name:document_page_procedure.action_procedures
 #: model:ir.ui.menu,name:document_page_procedure.menu_mgmtsystem_manuals_procedures
 msgid "Procedures"
-msgstr "Procedures"
+msgstr "Procedure"
 
 #. module: document_page_procedure
 #: model:ir.actions.act_window,help:document_page_procedure.action_procedures
 msgid "Procedures of your management system."
-msgstr "Procedures of your management system."
+msgstr "Procedure del tuo Sistema Gestione Qualità."
 
