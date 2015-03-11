@@ -54,7 +54,7 @@ msgstr "Aziende"
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,company_id:0
 msgid "Company"
-msgstr "Company"
+msgstr "Azienda"
 
 #. module: mgmtsystem_hazard
 #: model:ir.model,name:mgmtsystem_hazard.model_mgmtsystem_hazard_risk_computation
@@ -101,7 +101,7 @@ msgstr "Misure di Controllo"
 #: field:mgmtsystem.hazard.type,create_uid:0
 #: field:mgmtsystem.hazard.usage,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creato da"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,create_date:0
@@ -117,7 +117,7 @@ msgstr "Created by"
 #: field:mgmtsystem.hazard.type,create_date:0
 #: field:mgmtsystem.hazard.usage,create_date:0
 msgid "Created on"
-msgstr "Created on"
+msgstr "Creato il"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_hazard.severity_critical
@@ -301,7 +301,7 @@ msgstr "Giustificazione"
 #: field:mgmtsystem.hazard.type,write_uid:0
 #: field:mgmtsystem.hazard.usage,write_uid:0
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Ultimo aggiornamento di"
 
 #. module: mgmtsystem_hazard
 #: field:mgmtsystem.hazard,write_date:0
@@ -317,7 +317,7 @@ msgstr "Last Updated by"
 #: field:mgmtsystem.hazard.type,write_date:0
 #: field:mgmtsystem.hazard.usage,write_date:0
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "Ultimo aggiornamento il"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_hazard.probability_low
