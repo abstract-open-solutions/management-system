@@ -29,7 +29,7 @@ msgstr "Azione:"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,changes:0
 msgid "Changes"
-msgstr "Changes"
+msgstr "Cambiamenti"
 
 #. module: mgmtsystem_review
 #: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
@@ -62,7 +62,7 @@ msgstr "Commenti:"
 #: field:mgmtsystem.review,company_id:0
 #: field:mgmtsystem.review.line,company_id:0
 msgid "Company"
-msgstr "Company"
+msgstr "Azienda"
 
 #. module: mgmtsystem_review
 #: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
@@ -80,18 +80,18 @@ msgstr "Riservatezza: Review della Direzione"
 #: field:mgmtsystem.review,create_uid:0
 #: field:mgmtsystem.review.line,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creato da"
 
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,create_date:0
 #: field:mgmtsystem.review.line,create_date:0
 msgid "Created on"
-msgstr "Created on"
+msgstr "Creato il"
 
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,date:0
 msgid "Date"
-msgstr "Date"
+msgstr "Data"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -101,7 +101,7 @@ msgstr "Data:"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review.line,decision:0
 msgid "Decision"
-msgstr "Decision"
+msgstr "Decisione"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -122,25 +122,25 @@ msgstr "ID"
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
 msgid "Improvements:"
-msgstr "Improvements:"
+msgstr "Miglioramenti:"
 
 #. module: mgmtsystem_review
 #: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
 #: report:mgmtsystem.review.report:0
 msgid "Inputs"
-msgstr "Inputs"
+msgstr "Input"
 
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,write_uid:0
 #: field:mgmtsystem.review.line,write_uid:0
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Ultimo aggiornamento di"
 
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,write_date:0
 #: field:mgmtsystem.review.line,write_date:0
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "Ultimo aggiornamento il"
 
 #. module: mgmtsystem_review
 #: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_form
@@ -151,7 +151,7 @@ msgstr "Linee"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,name:0
 msgid "Name"
-msgstr "Name"
+msgstr "Nome"
 
 #. module: mgmtsystem_review
 #: selection:mgmtsystem.review.line,type:0
@@ -161,13 +161,13 @@ msgstr "Non Comformità"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review.line,nonconformity_id:0
 msgid "Nonconformity"
-msgstr "Nonconformity"
+msgstr "Non Comformità"
 
 #. module: mgmtsystem_review
 #: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
 #: selection:mgmtsystem.review,state:0
 msgid "Open"
-msgstr "Apri"
+msgstr "Aperto"
 
 #. module: mgmtsystem_review
 #: view:mgmtsystem.review:mgmtsystem_review.view_mgmtsystem_review_filter
@@ -204,7 +204,7 @@ msgstr "Stampa Report"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,reference:0
 msgid "Reference"
-msgstr "Reference"
+msgstr "Referenza"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -253,7 +253,7 @@ msgstr "Risposte Sondaggio Rilevazione Soddisfazione"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review,state:0
 msgid "State"
-msgstr "State"
+msgstr "Stato"
 
 #. module: mgmtsystem_review
 #: report:mgmtsystem.review.report:0
@@ -269,10 +269,10 @@ msgstr "Risposte Sondaggio"
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review.line,name:0
 msgid "Title"
-msgstr "Title"
+msgstr "Titolo"
 
 #. module: mgmtsystem_review
 #: field:mgmtsystem.review.line,type:0
 msgid "Type"
-msgstr "Type"
+msgstr "Tipo"
 
