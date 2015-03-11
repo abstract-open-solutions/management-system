@@ -62,7 +62,7 @@ msgstr "Azione Correttiva"
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creato da"
 
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,create_date:0
@@ -77,7 +77,7 @@ msgstr "Data"
 #. module: mgmtsystem_action
 #: help:mgmtsystem.action,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr "Date of the last message posted on the record."
+msgstr "Data dell'ultimo messaggio postato sul record."
 
 #. module: mgmtsystem_action
 #: view:mgmtsystem.action:mgmtsystem_action.view_mgmtsystem_action_form
@@ -149,12 +149,12 @@ msgstr "È un Follower"
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,message_last_post:0
 msgid "Last Message Date"
-msgstr "Last Message Date"
+msgstr "Data Ultimo Messaggio"
 
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,write_uid:0
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Ultimo Aggiornamento di"
 
 #. module: mgmtsystem_action
 #: selection:mgmtsystem.action,priority:0
@@ -169,7 +169,7 @@ msgstr "Messaggi"
 #. module: mgmtsystem_action
 #: help:mgmtsystem.action,message_ids:0
 msgid "Messages and communication history"
-msgstr "Messages and communication history"
+msgstr "Messaggi e Storico Comunicazioni"
 
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,action_next:0
@@ -225,7 +225,7 @@ msgstr "Referenza"
 #. module: mgmtsystem_action
 #: model:ir.actions.server,name:mgmtsystem_action.action_email_reminder_action
 msgid "Reminder to Responsible"
-msgstr "Reminder to Responsible"
+msgstr "Reminder per il Responsabile"
 
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,resolution:0
@@ -317,12 +317,12 @@ msgstr "Osservatori Email"
 #. module: mgmtsystem_action
 #: field:mgmtsystem.action,website_message_ids:0
 msgid "Website Messages"
-msgstr "Website Messages"
+msgstr "Messaggi Sito Web"
 
 #. module: mgmtsystem_action
 #: help:mgmtsystem.action,website_message_ids:0
 msgid "Website communication history"
-msgstr "Website communication history"
+msgstr "Storico Messaggi Sito Web"
 
 #. module: mgmtsystem_action
 #: model:ir.actions.act_window,name:mgmtsystem_action.action_mgmtsystem_action
