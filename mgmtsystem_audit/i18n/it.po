@@ -127,14 +127,14 @@ msgstr "Copia Linee Verifica"
 #: field:mgmtsystem.audit,create_uid:0
 #: field:mgmtsystem.verification.line,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creato da"
 
 #. module: mgmtsystem_audit
 #: field:copy.verification.lines,create_date:0
 #: field:mgmtsystem.audit,create_date:0
 #: field:mgmtsystem.verification.line,create_date:0
 msgid "Created on"
-msgstr "Created on"
+msgstr "Creato il"
 
 #. module: mgmtsystem_audit
 #: field:mgmtsystem.audit,date:0
@@ -144,7 +144,7 @@ msgstr "Data"
 #. module: mgmtsystem_audit
 #: help:mgmtsystem.audit,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr "Date of the last message posted on the record."
+msgstr "Date ultimo messaggio postato sul record."
 
 #. module: mgmtsystem_audit
 #: report:mgmtsystem.audit.report:0
@@ -155,7 +155,7 @@ msgstr "Data:"
 #. module: mgmtsystem_audit
 #: field:mgmtsystem.audit,message_follower_ids:0
 msgid "Followers"
-msgstr "Followers"
+msgstr "Follower"
 
 #. module: mgmtsystem_audit
 #: help:mgmtsystem.audit,message_summary:0
@@ -198,21 +198,21 @@ msgstr "E' Conforme"
 #. module: mgmtsystem_audit
 #: field:mgmtsystem.audit,message_last_post:0
 msgid "Last Message Date"
-msgstr "Last Message Date"
+msgstr "Data Ultimo Messaggio"
 
 #. module: mgmtsystem_audit
 #: field:copy.verification.lines,write_uid:0
 #: field:mgmtsystem.audit,write_uid:0
 #: field:mgmtsystem.verification.line,write_uid:0
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Ultimo Aggiornamento di"
 
 #. module: mgmtsystem_audit
 #: field:copy.verification.lines,write_date:0
 #: field:mgmtsystem.audit,write_date:0
 #: field:mgmtsystem.verification.line,write_date:0
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "Ultimo Aggiornamento il"
 
 #. module: mgmtsystem_audit
 #: field:mgmtsystem.audit,message_ids:0
@@ -245,7 +245,7 @@ msgstr "Non Conformità del Sistema Gestione Qualità"
 #: view:mgmtsystem.audit:mgmtsystem_audit.view_mgmtsystem_audit_filter
 #: selection:mgmtsystem.audit,state:0
 msgid "Open"
-msgstr "Apri"
+msgstr "Aperto"
 
 #. module: mgmtsystem_audit
 #: view:board.board:mgmtsystem_audit.board_mgmtsystem_audit_form
@@ -371,12 +371,12 @@ msgstr "Liste Verifica"
 #. module: mgmtsystem_audit
 #: field:mgmtsystem.audit,website_message_ids:0
 msgid "Website Messages"
-msgstr "Website Messages"
+msgstr "Messaggi Sito Web"
 
 #. module: mgmtsystem_audit
 #: help:mgmtsystem.audit,website_message_ids:0
 msgid "Website communication history"
-msgstr "Website communication history"
+msgstr "Storico Comunicazioni Sito Web"
 
 #. module: mgmtsystem_audit
 #: view:copy.verification.lines:mgmtsystem_audit.copy_verification_lines_form_view
