@@ -18,23 +18,23 @@ msgstr ""
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_improvements
 msgid "And what should be improved?"
-msgstr "And what should be improved?"
+msgstr "E cosa dovrebbe essere migliorato?"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_company
 msgid "Company / Organization"
-msgstr "Company / Organization"
+msgstr "Azienda / Organizzazione"
 
 #. module: mgmtsystem_survey
 #: model:survey.page,title:mgmtsystem_survey.mgmtsystem_survey_page
 #: model:survey.survey,title:mgmtsystem_survey.mgmtsystem_survey_satisfaction
 msgid "Customer Satisfaction Survey"
-msgstr "Customer Satisfaction Survey"
+msgstr "Sondaggio di rilevazione della soddisfazione del cliente"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_expectations
 msgid "Finally, what do you expect from us?"
-msgstr "Finally, what do you expect from us?"
+msgstr "Infine, cosa ti aspetti da noi?"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_comments
@@ -44,27 +44,27 @@ msgstr "Finally, what do you expect from us?"
 #: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_name
 #: model:survey.question,comments_message:mgmtsystem_survey.mgmtsystem_survey_question_reference
 msgid "If other, precise:"
-msgstr "If other, precise:"
+msgstr "Se altro, precisare:"
 
 #. module: mgmtsystem_survey
 #: model:survey.stage,name:mgmtsystem_survey.mgmtsystem_survey_type
 msgid "Management System"
-msgstr "Management System"
+msgstr "Sistema Gestione Qualità"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_name
 msgid "Name"
-msgstr "Name"
+msgstr "Nome"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_comments
 msgid "Please feel free to add any additional comments in regards to the previous questions"
-msgstr "Please feel free to add any additional comments in regards to the previous questions"
+msgstr "Se lo desidera può aggiungere commenti riguardanti la domanda precedente"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_reference
 msgid "Reference (project name, contract/PO/quote #)"
-msgstr "Reference (project name, contract/PO/quote #)"
+msgstr "Referenza (nome progetto, contratto/PO/quotazione #)"
 
 #. module: mgmtsystem_survey
 #: model:ir.actions.act_window,name:mgmtsystem_survey.action_survey_form
@@ -80,7 +80,7 @@ msgstr "Sondaggi"
 #: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_name
 #: model:survey.question,validation_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_reference
 msgid "The answer you entered has an invalid format."
-msgstr "The answer you entered has an invalid format."
+msgstr "La risposta inserita è in un formato non valido."
 
 #. module: mgmtsystem_survey
 #: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_comments
@@ -90,5 +90,5 @@ msgstr "The answer you entered has an invalid format."
 #: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_name
 #: model:survey.question,constr_error_msg:mgmtsystem_survey.mgmtsystem_survey_question_reference
 msgid "This question requires an answer."
-msgstr "This question requires an answer."
+msgstr "Questa domanda richiede obbligatoriamente una risposta."
 
