@@ -19,10 +19,10 @@ msgstr ""
 #: model:ir.actions.act_window,name:document_page_environmental_aspect.action_environmental_aspects
 #: model:ir.ui.menu,name:document_page_environmental_aspect.menu_mgmtsystem_manuals_environmental_aspects
 msgid "Environmental Aspects"
-msgstr "Environmental Aspects"
+msgstr "Aspetti Ambientali"
 
 #. module: document_page_environmental_aspect
 #: model:ir.actions.act_window,help:document_page_environmental_aspect.action_environmental_aspects
 msgid "Environmental aspects of your management system."
-msgstr "Environmental aspects of your management system."
+msgstr "Aspetti ambientali del tuo Sistema Gestione Qualità."
 
