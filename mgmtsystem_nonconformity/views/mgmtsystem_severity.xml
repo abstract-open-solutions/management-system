@@ -8,10 +8,12 @@
             <field name="model">mgmtsystem.nonconformity.severity</field>
             <field name="arch" type="xml">
                 <form string="Severity of Complaints and Nonconformities">
+                    <group>
                         <field name="name"/>
                         <field name="sequence"/>
                         <field name="description" colspan="2"/>
                         <field name="active"/>
+                    </group>
                 </form>
             </field>
         </record>
@@ -23,10 +25,10 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_open_nonconformity_severity" 
-            action="open_mgmtsystem_nonconformity_severity_list" 
-            parent="mgmtsystem_nonconformity.menu_mgmtsystem_configuration_nonconformities" 
+        <menuitem id="menu_open_nonconformity_severity"
+            action="open_mgmtsystem_nonconformity_severity_list"
+            parent="mgmtsystem_nonconformity.menu_mgmtsystem_configuration_nonconformities"
             groups="mgmtsystem.group_mgmtsystem_manager"/>
-         
+
     </data>
 </openerp>
