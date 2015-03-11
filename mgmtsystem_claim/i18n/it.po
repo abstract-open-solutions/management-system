@@ -28,7 +28,7 @@ msgstr "Azioni"
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,active:0
 msgid "Active"
-msgstr "Active"
+msgstr "Attivo"
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,categ_id:0
@@ -100,7 +100,7 @@ msgstr "Azione Correttiva"
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creato da"
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,create_date:0
@@ -136,7 +136,7 @@ msgstr "Descrizione"
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,email_from:0
 msgid "Destination email for email gateway."
-msgstr "Destination email for email gateway."
+msgstr "Email destinataria per il gateway email."
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,email_from:0
@@ -151,7 +151,7 @@ msgstr "Follow Up"
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,message_follower_ids:0
 msgid "Followers"
-msgstr "Followers"
+msgstr "Follower"
 
 #. module: mgmtsystem_claim
 #: view:mgmtsystem.claim:mgmtsystem_claim.view_mgmtsystem_claims_filter
@@ -166,7 +166,7 @@ msgstr "Alto"
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,message_summary:0
 msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
-msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Contiene il riepilogo Chat (numero dei messaggi, ...). Il riepilogo è direttamente in formato HTML, per poter essere incluso in viste kanban."
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,id:0
@@ -176,22 +176,22 @@ msgstr "ID"
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,message_unread:0
 msgid "If checked new messages require your attention."
-msgstr "If checked new messages require your attention."
+msgstr "Se selezionato nuovi messaggi richiedono la tua attenzione."
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,message_is_follower:0
 msgid "Is a Follower"
-msgstr "Is a Follower"
+msgstr "E' un Follower"
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,message_last_post:0
 msgid "Last Message Date"
-msgstr "Last Message Date"
+msgstr "Data Ultimo Messaggio"
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,write_uid:0
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "Ultimo Aggiornamento di"
 
 #. module: mgmtsystem_claim
 #: selection:mgmtsystem.claim,priority:0
@@ -206,7 +206,7 @@ msgstr "Messaggi"
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,message_ids:0
 msgid "Messages and communication history"
-msgstr "Messages and communication history"
+msgstr "Messaggi e Storico Comunicazioni"
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,action_next:0
@@ -226,7 +226,7 @@ msgstr "Normale"
 #. module: mgmtsystem_claim
 #: model:ir.actions.server,name:mgmtsystem_claim.mgmtsystem_claim_server_action
 msgid "Notify the person in charge of the new claim"
-msgstr "Notifica la persona incaricata di gestire il reclam"
+msgstr "Notifica la persona incaricata di gestire il nuovo reclamo"
 
 #. module: mgmtsystem_claim
 #: view:board.board:mgmtsystem_claim.board_mgmtsystem_claim_form
@@ -258,7 +258,7 @@ msgstr "Priorità"
 #. module: mgmtsystem_claim
 #: model:ir.actions.act_window,help:mgmtsystem_claim.mgmtsystem_claim_action
 msgid "Record and track your customers' claims. Claims may be linked to a sales order or a lot. You can send emails with attachments and keep the full history for a claim (emails sent, intervention type and so on). Claims may automatically be linked to an email address using the mail gateway module."
-msgstr "Record and track your customers' claims. Claims may be linked to a sales order or a lot. You can send emails with attachments and keep the full history for a claim (emails sent, intervention type and so on). Claims may automatically be linked to an email address using the mail gateway module."
+msgstr Registra e traccia i reclami dei tuoi clienti. I reclami possono essere collegati ad un ordine di vendita o a un lotto. Puoi inviare email con allegati e tenere traccia dell'intera storia di un reclamo (email inviate, tipi di intervento ecc..). I reclami possono essere collegati automaticamente ad un indirizzo email usando il modulo mail gateway."
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,ref:0
@@ -295,7 +295,7 @@ msgstr "Utente Responsabile"
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,section_id:0
 msgid "Responsible sales team. Define Responsible user and Email account for mail gateway."
-msgstr "Responsible sales team. Define Responsible user and Email account for mail gateway."
+msgstr "Responsabile Team Vendite. Definire Utente Responsabile e account Email per il mail gateway."
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,cause:0
@@ -320,7 +320,7 @@ msgstr "Cerca Reclami"
 #. module: mgmtsystem_claim
 #: view:mgmtsystem.claim:mgmtsystem_claim.mgmtsystem_claims_form_view
 msgid "Share a note..."
-msgstr "Share a note..."
+msgstr "Condividi una nota..."
 
 #. module: mgmtsystem_claim
 #: view:mgmtsystem.claim:mgmtsystem_claim.view_mgmtsystem_claims_filter
@@ -331,7 +331,7 @@ msgstr "Stadio"
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,message_summary:0
 msgid "Summary"
-msgstr "Summary"
+msgstr "Riepilogo"
 
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,email_cc:0
@@ -357,7 +357,7 @@ msgstr "Reclami Non Assegnati"
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,message_unread:0
 msgid "Unread Messages"
-msgstr "Unread Messages"
+msgstr "Messaggi Non letti"
 
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,write_date:0
@@ -372,12 +372,12 @@ msgstr "Osservatori Email"
 #. module: mgmtsystem_claim
 #: field:mgmtsystem.claim,website_message_ids:0
 msgid "Website Messages"
-msgstr "Website Messages"
+msgstr "Messaggi Sito Web"
 
 #. module: mgmtsystem_claim
 #: help:mgmtsystem.claim,website_message_ids:0
 msgid "Website communication history"
-msgstr "Website communication history"
+msgstr "Storico Comunicazioni Sito web"
 
 #. module: mgmtsystem_claim
 #: model:ir.actions.act_window,name:mgmtsystem_claim.action_mgmtsystem_claim
