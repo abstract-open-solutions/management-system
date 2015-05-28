@@ -49,7 +49,7 @@ msgstr "Se altro, precisare:"
 #. module: mgmtsystem_survey
 #: model:survey.stage,name:mgmtsystem_survey.mgmtsystem_survey_type
 msgid "Management System"
-msgstr "Sistema Gestione Qualità"
+msgstr "Management System"
 
 #. module: mgmtsystem_survey
 #: model:survey.question,question:mgmtsystem_survey.mgmtsystem_survey_question_name

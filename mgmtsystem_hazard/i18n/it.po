@@ -328,7 +328,7 @@ msgstr "Basso"
 #. module: mgmtsystem_hazard
 #: view:res.company:mgmtsystem_hazard.company_form_view
 msgid "Management System"
-msgstr "Sistema Gestione Qualità"
+msgstr "Management System"
 
 #. module: mgmtsystem_hazard
 #: model:mgmtsystem.hazard.origin,name:mgmtsystem_hazard.origin_aging

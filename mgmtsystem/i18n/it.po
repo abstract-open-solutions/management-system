@@ -71,7 +71,7 @@ msgstr "Gestisci Sistemi di qualità, manuali, KPI, non conformità, azioni, fee
 #: model:ir.ui.menu,name:mgmtsystem.menu_mgmtsystem_root
 #: view:mgmtsystem.system:mgmtsystem.system_form
 msgid "Management System"
-msgstr "Sistema Gestione Qualità"
+msgstr "Management System"
 
 #. module: mgmtsystem
 #: model:ir.actions.act_window,name:mgmtsystem.open_board_mgmtsystem
@@ -83,7 +83,7 @@ msgstr "Dashboard Sistema Gestione Qualità"
 #: model:ir.ui.menu,name:mgmtsystem.mgmtsystem_dashboard
 #: view:mgmtsystem.system:mgmtsystem.system_tree
 msgid "Management Systems"
-msgstr "Sistema Gestione Qualità"
+msgstr "Management System"
 
 #. module: mgmtsystem
 #: view:board.board:mgmtsystem.board_mgmtsystem_form
