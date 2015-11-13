@@ -2,30 +2,30 @@
 <openerp>
     <data>
 
-        <menuitem id="menu_mgmtsystem_root" 
-            name="Management System" 
-            sequence="150" 
+        <menuitem id="menu_mgmtsystem_root"
+            name="Management System"
+            sequence="150"
             groups="mgmtsystem.group_mgmtsystem_manager,base.group_user"
             web_icon="images/mgmtsystem.png"
             web_icon_hover="images/mgmtsystem-hover.png"
             />
 
-        <menuitem id="menu_mgmtsystem_main" 
-            name="Management System" 
-            parent="menu_mgmtsystem_root" 
-            sequence="0" 
+        <menuitem id="menu_mgmtsystem_main"
+            name="Management System"
+            parent="menu_mgmtsystem_root"
+            sequence="0"
             groups="base.group_user"/>
 
-        <menuitem id="menu_mgmtsystem_manuals" 
-            name="Manuals" 
-            parent="menu_mgmtsystem_root" 
-            sequence="10" 
+        <menuitem id="menu_mgmtsystem_manuals"
+            name="Manuals"
+            parent="menu_mgmtsystem_root"
+            sequence="10"
             groups="base.group_user"/>
 
-        <menuitem id="menu_mgmtsystem_configuration" 
-            name="Configuration" 
-            parent="mgmtsystem.menu_mgmtsystem_root" 
-            groups="mgmtsystem.group_mgmtsystem_manager" 
+        <menuitem id="menu_mgmtsystem_configuration"
+            name="Configuration"
+            parent="mgmtsystem.menu_mgmtsystem_root"
+            groups="mgmtsystem.group_mgmtsystem_manager"
             sequence="50"/>
 
        <record model="ir.ui.view" id="mgmtsystem_system_tree">
@@ -34,8 +34,8 @@
             <field name="arch" type="xml">
                 <tree string="Systems">
                     <field name="name"/>
-		    <field name="manual"/>
-		    <field name="company_id" groups="base.group_multi_company"/>
+                    <field name="manual"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
                 </tree>
             </field>
         </record>
@@ -45,9 +45,11 @@
             <field name="model">mgmtsystem.system</field>
             <field name="arch" type="xml">
                 <form string="Systems">
-                    <field name="name"/>
-		    <field name="manual"/>
-		    <field name="company_id" groups="base.group_multi_company"/>
+                    <group>
+                        <field name="name"/>
+                        <field name="manual"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                    </group>
                 </form>
             </field>
         </record>
@@ -59,9 +61,9 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_mgmtsystem_configuration_system" 
-            name="Systems" 
-            parent="menu_mgmtsystem_configuration" 
+        <menuitem id="menu_mgmtsystem_configuration_system"
+            name="Systems"
+            parent="menu_mgmtsystem_configuration"
             groups="mgmtsystem.group_mgmtsystem_manager"
 	    action="action_system_form"
             sequence="60"/>
